@@ -1,0 +1,123 @@
+:root { --mainBackgroundColor: white; --fontColor: black; }
+ * { box-sizing: border-box; }
+[class*="col-NZ"] { float: left; }
+.show-on-mobile, .show-on-tablet { display: none}
+.white-text { color: white; }
+.col-NZ-1{ width: 8.33%; }
+.col-NZ-2 { width: 16.66%; }
+.col-NZ-3 { width: 25%; }
+.col-NZ-4 { width: 33.33%; }
+.col-NZ-5 { width: 41.66%; }
+.col-NZ-6 { width: 50% }
+.col-NZ-7 { width: 58.33% }
+.col-NZ-8 { width: 66.66% }
+.col-NZ-9 { width: 75% }
+.col-NZ-10 { width:83.33% }
+.col-NZ-11 { width: 91.66% }
+.col-NZ-12 { width: 100% }
+   @media(max-width: 1000px) {
+.hide-on-tablet { display: none; }
+.show-on-tablet { display: block; }
+.col-NZ-1-tablet { width: 8.33%; }
+.col-NZ-2-tablet { width: 16.66%; }
+.col-NZ-3-tablet { width: 25%; }
+.col-NZ-4-tablet { width: 33.33%; }
+.col-NZ-5-tablet { width: 41.66%; }
+.col-NZ-6-tablet{ width: 50%; }
+.col-NZ-7-tablet { width: 58.33%; }
+.col-NZ-8-tablet { width: 66.66%; }
+.col-NZ-9-tablet { width: 75%; }
+.col-NZ-10-tablet { width: 83.33%; }
+.col-NZ-11-tablet { width: 91.66%; }
+.col-NZ-12-tablet { width: 100%; }}
+    @media(max-width: 767px) {
+.hide-on-mobile { display: none; }
+.show-on-mobile { display: block; }
+.col-NZ-1-mobile { width: 8.33%; }
+.col-NZ-2-mobile { width: 16.66%; }
+.col-NZ-3-mobile { width: 25%; }
+.col-NZ-4-mobile { width: 33.33%; }
+.col-NZ-5-mobile { width: 41.66%; }
+.col-NZ-6-mobile{ width: 50%; }
+.col-NZ-7-mobile { width: 58.33%; }
+.col-NZ-8-mobile { width: 66.66%; }
+.col-NZ-9-mobile { width: 75%; }
+.col-NZ-10-mobile { width: 83.33%; }
+.col-NZ-11-mobile { width: 91.66%; }
+.col-NZ-12-mobile { width: 100%; }
+}
+.movie-container {
+    min-height: 250px;
+    max-height: 600px;
+    border: 2px solid red;
+    width: 20%;
+    float: left;
+
+}
+
+.post-image img {
+    width: 250px;
+}
+
+li {
+    list-style: none;
+}
+.post-image img {
+    height: 300px;
+    width: 100%;
+}
+
+.movie-container {
+    height: 500px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    float:
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.movie-container::after {
+    content: '';
+    display: block;
+    width: 100%;
+    oversflow: hidden;
+    height: 50%;
+    border: 2px solid blue;
+    background-color: red;
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    transform: rotateZ(170deg);
+    z-index: -1;
+}
+
+.post-header h2 {
+    font-size: 25px !important;
+    text-align: center;
+    color: red;
+}
+
+.post-year {
+    color: darkred;
+    text-align: center;
+}
+
+.post-image:hover {
+    cursor: pointer;
+}
+
+div#app {
+    margin: 0 auto;
+}
+.post-header:hover{
+  cursor:pointer;
+}
+iframe {
+    width:100%;
+    height:75vh;
+
+}

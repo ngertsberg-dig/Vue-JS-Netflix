@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+
+<head>
+  <meta charset="UTF-8">
+  <title> </title>
+  <!-- If IE use the latest rendering engine -->
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Set the page to the width of the device and set the zoon level -->
+
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+
+  <!-- BOOTSTRAP REFERENECE -->
+
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="velocity.min.js"></script>
+  <script src="anime.min.js"></script>
+  <link rel="stylesheet" href="font-awesome.min.css">
+  <link rel="stylesheet" href="font-awesome.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.1/velocity.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="paroller.js"></script>
+  <script src="paroller.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.9/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-router/2.2.1/vue-router.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+
+
+  <link href = 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.css' rel = 'stylesheet'>
+  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.js'></script>
+  <script src = 'https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js'></script>
+
+
+  <link href = "CSS/all-pages.css" rel = 'stylesheet'>
+
+<style>
+
+</style>
+<body>
+<div id = 'app'>
+
+  <iframe
+    width="560"
+    height="315"
+    :src = 'posts[3].trailer'
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>
+
+<ul>
+  <li v-for = 'post in posts'>
+    <div class = 'movie-container'>
+    <div class = 'display-flex'>
+
+      <div class = 'post-image' @click = 'changeMovie'>
+        <img :src = 'post.poster' :data-video-url = 'post.trailer'>
+      </div>
+      <div class = 'post-header' @click = 'changeMovie'>
+        <h2>{{post.name}}</h2>
+      </div>
+      <div class = 'post-year'>
+        Date Released: {{post.year}}
+      </div>
+    </div>
+  </div>
+  </li>
+</ul>
+</div>
+
+</body>
+  <script src = "JS/main.js"></script>
+
+
+</html>
